@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
+  "homepage": "https://naverstay.github.io/gpg-json-verifier",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
