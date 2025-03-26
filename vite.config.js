@@ -5,4 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/gpg-json-verifier/',
+  build: {
+    rollupOptions: {
+      external: [], // Добавь пустой массив, чтобы Vite не пытался исключить openpgp
+    },
+  },
+  optimizeDeps: {
+    include: ['openpgp'], // Явно укажем openpgp как зависимость
+  },
 })
